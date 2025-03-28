@@ -190,4 +190,9 @@ def show_final_result(selected_year):
     return f"In {selected_year}, {winner} won the World Cup. Runner-up: {runner_up}."
 
 # run the Dash app (will open in a browser)
-app.run(debug=True)
+import os
+
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 8050))
+    app.run(host='0.0.0.0', port=port, debug=True)
+
