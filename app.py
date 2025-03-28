@@ -7,6 +7,7 @@ import dash
 from dash import dcc, html, Input, Output
 import plotly.express as px
 
+# Deployed at: https://world-cup-dashboard.onrender.com
 
 # entering world cup data
 data = [
